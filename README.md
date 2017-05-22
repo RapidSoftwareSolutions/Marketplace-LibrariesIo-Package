@@ -1,7 +1,7 @@
 [![](https://scdn.rapidapi.com/RapidAPI_banner.png)](https://rapidapi.com/package/LibrariesIo/functions?utm_source=RapidAPIGitHub_LibrariesIoFunctions&utm_medium=button&utm_content=RapidAPI_GitHub)
 # Libraries io Package
 
-* Domain: libraries.io
+* Domain: [libraries.io](https://libraries.io)
 * Credentials: apiKey
 
 ## How to get credentials: 
