@@ -1,5 +1,5 @@
 [![](https://scdn.rapidapi.com/RapidAPI_banner.png)](https://rapidapi.com/package/LibrariesIo/functions?utm_source=RapidAPIGitHub_LibrariesIoFunctions&utm_medium=button&utm_content=RapidAPI_GitHub)
-# LibrariesIo Package
+# Libraries io Package
 
 * Domain: libraries.io
 * Credentials: apiKey
