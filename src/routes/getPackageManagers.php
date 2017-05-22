@@ -1,13 +1,10 @@
 <?php
 
-$app->post('/api/Bitly/getAccessToken', function ($request, $response) {
+$app->post('/api/LibrariesIo/getPackageManagers', function ($request, $response) {
 
-    echo "success!!!";
-    die();
-    
     $settings = $this->settings;
     $checkRequest = $this->validation;
-    $validateRes = $checkRequest->validate($request, ['clientId','clientSecret','code','redirectUri']);
+    $validateRes = $checkRequest->validate($request, ['apiKey']);
 
     if(!empty($validateRes) && isset($validateRes['callback']) && $validateRes['callback']=='error') {
         return $response->withHeader('Content-type', 'application/json')->withStatus(200)->withJson($validateRes);
@@ -15,17 +12,13 @@ $app->post('/api/Bitly/getAccessToken', function ($request, $response) {
         $post_data = $validateRes;
     }
 
-    $data['client_id'] = $post_data['args']['clientId'];
-    $data['client_secret'] = $post_data['args']['clientSecret'];
-    $data['code'] = $post_data['args']['code'];
-    $data['redirect_uri'] = $post_data['args']['redirectUri'];
-
-    $query_str = $settings['oauth_url'] . "/access_token";
+    $data['api_key'] = $post_data['args']['apiKey'];
+    $query_str = $settings['api_url'] . "platforms";
     $client = $this->httpClient;
 
     try {
 
-        $resp = $client->post($query_str, [
+        $resp = $client->get($query_str, [
             'query' => $data
         ]);
         $responseBody = $resp->getBody()->getContents();

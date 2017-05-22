@@ -16,7 +16,6 @@ return [
             'level' => \Monolog\Logger::DEBUG,
         ],
         
-        'api_url' => 'https://api-ssl.bitly.com/v3/',
-        'oauth_url' => 'https://api-ssl.bitly.com/oauth/'
+        'api_url' => 'https://libraries.io/api/'
     ],
 ];

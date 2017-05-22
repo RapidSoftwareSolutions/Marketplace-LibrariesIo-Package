@@ -206,9 +206,9 @@
           "required": true
         },
         {
-          "name": "platform",
+          "name": "owner",
           "type": "String",
-          "info": "Platfotm name. Example: npm",
+          "info": "Repository owner",
           "required": true
         },
         {
@@ -237,9 +237,9 @@
           "required": true
         },
         {
-          "name": "platform",
+          "name": "owner",
           "type": "String",
-          "info": "Platfotm name. Example: npm",
+          "info": "Repository owner",
           "required": true
         },
         {
@@ -268,9 +268,9 @@
           "required": true
         },
         {
-          "name": "platform",
+          "name": "owner",
           "type": "String",
-          "info": "Platfotm name. Example: npm",
+          "info": "Repository owner",
           "required": true
         },
         {
