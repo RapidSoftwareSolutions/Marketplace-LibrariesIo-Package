@@ -35,6 +35,488 @@
         "name": "success",
         "info": "Success"
       }]
+    },
+    {
+      "name": "getProjectInfo",
+      "description": "Get information about a project and it's versions.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "your api key from Libraries Io",
+          "required": true
+        },
+        {
+          "name": "platform",
+          "type": "String",
+          "info": "Platfotm name. Example: npm"
+        ,
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "info": "Project name. Example: express",
+          "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
+    },
+    {
+      "name": "getProjectDependencies",
+      "description": "Get a list of dependencies for a version of a project, pass latest to get dependency info for the latest available version",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "your api key from Libraries Io",
+          "required": true
+        },
+        {
+          "name": "platform",
+          "type": "String",
+          "info": "Platfotm name. Example: npm"
+        ,
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "info": "Project name. Example: express",
+          "required": true
+        },
+        {
+          "name": "version",
+          "type": "String",
+          "info": "Example: latest",
+          "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
+    },
+    {
+      "name": "getProjectDependents",
+      "description": "Get projects that have at least one version that depends on a given project.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "your api key from Libraries Io",
+          "required": true
+        },
+        {
+          "name": "platform",
+          "type": "String",
+          "info": "Platfotm name. Example: npm"
+        ,
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "info": "Project name. Example: express",
+          "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
+    },
+    {
+      "name": "getProjectDependentRepositories",
+      "description": "Get repositories that depend on a given project.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "your api key from Libraries Io",
+          "required": true
+        },
+        {
+          "name": "platform",
+          "type": "String",
+          "info": "Platfotm name. Example: npm"
+        ,
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "info": "Project name. Example: express",
+          "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
+    },
+    {
+      "name": "searchProjects",
+      "description": "Search for projects",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "your api key from Libraries Io",
+          "required": true
+        },
+        {
+          "name": "query",
+          "type": "String",
+          "info": "Search string. Example: express",
+          "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
+    },
+    {
+      "name": "getRepositoryInfo",
+      "description": "Get a info for a repository. Currently only works for open source repositories.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "your api key from Libraries Io",
+          "required": true
+        },
+        {
+          "name": "platform",
+          "type": "String",
+          "info": "Platfotm name. Example: npm",
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "info": "Project name. Example: express",
+          "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
+    },
+    {
+      "name": "getRepositoryDependencies",
+      "description": "Get a list of dependencies for a repositories. Currently only works for open source repositories.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "your api key from Libraries Io",
+          "required": true
+        },
+        {
+          "name": "platform",
+          "type": "String",
+          "info": "Platfotm name. Example: npm",
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "info": "Project name. Example: express",
+          "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
+    },
+    {
+      "name": "getRepositoryProjects",
+      "description": "Get a list of projects referencing the given repository.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "your api key from Libraries Io",
+          "required": true
+        },
+        {
+          "name": "platform",
+          "type": "String",
+          "info": "Platfotm name. Example: npm",
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "info": "Project name. Example: express",
+          "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
+    },
+    {
+      "name": "getUserInfo",
+      "description": "Get information for a given User or Organization",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "your api key from Libraries Io",
+          "required": true
+        },
+        {
+          "name": "login",
+          "type": "String",
+          "info": "Login",
+          "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
+    },
+    {
+      "name": "getUserRepositories",
+      "description": "Get repositories owned by a User",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "your api key from Libraries Io",
+          "required": true
+        },
+        {
+          "name": "login",
+          "type": "String",
+          "info": "Login",
+          "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
+    },
+    {
+      "name": "getUserProjects",
+      "description": "Get a list of projects referencing the given users repositories.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "your api key from Libraries Io",
+          "required": true
+        },
+        {
+          "name": "login",
+          "type": "String",
+          "info": "Login",
+          "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
+    },
+    {
+      "name": "getUserSubscriptions",
+      "description": "List projects that a user is subscribed to recieved notifications about new releases.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "your api key from Libraries Io",
+          "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
+    },
+    {
+      "name": "subscribeToProject",
+      "description": "Subscribe to recieved notifications about new releases of a project",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "your api key from Libraries Io",
+          "required": true
+        },
+        {
+          "name": "platform",
+          "type": "String",
+          "info": "Platfotm name. Example: npm",
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "info": "Project name. Example: express",
+          "required": true
+        },
+        {
+          "name": "includePrerelease",
+          "type": "Boolean",
+          "info": "Prerelease include",
+          "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
+    },
+    {
+      "name": "checkUserSubscription",
+      "description": "Check if a users is subscribed to recieved notifications about new releases of a project",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "your api key from Libraries Io",
+          "required": true
+        },
+        {
+          "name": "platform",
+          "type": "String",
+          "info": "Platfotm name. Example: npm",
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "info": "Project name. Example: express",
+          "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
+    },
+    {
+      "name": "updateSubscription",
+      "description": "Update the options for a subscription",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "your api key from Libraries Io",
+          "required": true
+        },
+        {
+          "name": "platform",
+          "type": "String",
+          "info": "Platfotm name. Example: npm",
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "info": "Project name. Example: express",
+          "required": true
+        },
+        {
+          "name": "includePrerelease",
+          "type": "Boolean",
+          "info": "Prerelease include",
+          "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
+    },
+    {
+      "name": "unsubscribeFromProject",
+      "description": "Stop recieving release notifications from a project",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "your api key from Libraries Io",
+          "required": true
+        },
+        {
+          "name": "platform",
+          "type": "String",
+          "info": "Platfotm name. Example: npm",
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "info": "Project name. Example: express",
+          "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
     }
   ]
 }
