@@ -1,0 +1,40 @@
+{
+  "package": "LibrariesIo",
+  "tagline": "LibrariesIo API",
+  "description": "",
+  "image": "https://logo.clearbit.com/libraries.io",
+  "repo": "https://github.com/RapidSoftwareSolutions/Marketplace-LibrariesIo-Package",
+  "keywords": [
+    "API",
+    "library",
+    "code",
+    "github"
+  ],
+  "accounts": {
+    "domain": "libraries.io",
+    "credentials": [
+      "apiKey"
+    ]
+  },
+  "blocks": [
+    {
+      "name": "getPackageManagers",
+      "description": "Get list of supported package managers",
+      "args": [
+        {
+        "name": "apiKey",
+        "type": "credentials",
+        "info": "your api key from Libraries Io",
+        "required": true
+        }
+      ],
+      "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
+    }
+  ]
+}
